@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../models/icon_menu.dart';
 import '../components/appbar_preferred_size.dart';
 import 'components/card_icon_menu.dart';
 import 'components/my_carrot_header.dart';
@@ -8,16 +9,15 @@ class MyCarrotPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    print('MyCarrotPage() 메모리 호출 확인');
     return Scaffold(
+      backgroundColor: Colors.black12,
       appBar: AppBar(
         title: Text('나의 당근'),
         actions: [
           IconButton(
             onPressed: () {},
-            icon: Icon(
-              Icons.settings,
-              color: Colors.grey,
-            ),
+            icon: Icon(Icons.settings, color: Colors.grey),
           )
         ],
         bottom: appBarBottomLine(),
@@ -25,10 +25,12 @@ class MyCarrotPage extends StatelessWidget {
       body: ListView(
         children: [
           MyCarrotHeader(),
-          CardIconMenu(),
-          // 아이콘 메뉴 1 - 카드 레이아웃
-          // 아이콘 메뉴 2 - 카드 레이아웃
-          // 아이콘 메뉴 3 - 카드 레이아웃
+          const SizedBox(height: 8.0),
+          CardIconMenu(iconMenuList: iconMenu1),
+          const SizedBox(height: 8.0),
+          CardIconMenu(iconMenuList: iconMenu2),
+          const SizedBox(height: 8.0),
+          CardIconMenu(iconMenuList: iconMenu3),
         ],
       ),
     );
