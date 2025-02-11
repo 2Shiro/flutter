@@ -3,10 +3,9 @@ import 'package:class_f_story/ui/pages/auth/join_page/join_page.dart';
 import 'package:class_f_story/ui/pages/auth/login_page/login_page.dart';
 import 'package:class_f_story/ui/pages/post/list_page/post_list_page.dart';
 import 'package:class_f_story/ui/pages/post/write_page/post_write_page.dart';
+import 'package:class_f_story/ui/pages/splash/splash_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-
-import 'ui/pages/splash/splash_page.dart';
 
 void main() {
   runApp(const ProviderScope(child: MyApp()));

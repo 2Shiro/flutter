@@ -64,7 +64,7 @@ class _SplashPageState extends ConsumerState<SplashPage> {
     return Scaffold(
       body: Center(
         child: Image.asset(
-          'assets/goodboy.gif',
+          'assets/splash.gif',
           width: double.infinity,
           height: double.infinity,
           fit: BoxFit.cover,
